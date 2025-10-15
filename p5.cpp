@@ -1,0 +1,31 @@
+#include "iostream"
+#include <stdio.h>
+using namespace std;
+
+int main()
+{
+	float Altura,Base;
+	float SUPERFICIE, PERIMETRO;
+	//Mensaje de bienvenida
+	cout << "Hola! Este programa 1.10 Calcula la superficie y el perimetro de un rectangulo" << "\n";
+
+	//Se declaran los numeros que se sumanran (pueden ser decimales)
+	
+	//Se pide el primer numero
+	cout << "Por favor ingresar el valor de la base: " << "\n";
+	//Se asigna el primer valor a la base
+	cin >> Base;
+	//Se pide el segundo numero
+	cout << "Por favor ingresar el valor de la Altura: " << "\n";
+	//Se asigna el primer valor a la Altura
+	cin >> Altura;
+	
+	SUPERFICIE= Base*Altura;
+	PERIMETRO=2*(Base+Altura);
+	
+	//Se muestra el resultado.
+	printf ("\n La superficie del rectangulo es %5.2f \n", SUPERFICIE);
+	printf ("\n El perimetro del rectangulo es %5.2f \n", PERIMETRO);
+	
+	return 0;
+}
